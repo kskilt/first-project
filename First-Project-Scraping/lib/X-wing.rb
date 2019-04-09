@@ -1,11 +1,11 @@
 class X-wing
-  attr_reader :date, :event, :number_of_players, :format, :location
+  attr_reader :date, :event, :player_count, :format, :location
   @@all = []
 
-  def initialize(:date, :event, :number_of_players, :format, :location)
+  def initialize(:date, :event, :player_count, :format, :location)
     @date = date
     @event = event
-    @number_of_players = number_of_players
+    @player_count = player_count
     @format = format
     @location = location
     @@all << self
