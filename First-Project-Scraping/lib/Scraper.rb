@@ -9,6 +9,8 @@ class Scraper
     index_page = Nokogiri::HTML(open(url))
     body = index_page.css("tbody")
     lists = body.css("tr").first
+    nextlevel = lists.css("td").first
+    name = lists.css("td").first.css("a").text
     binding.pry
   end
 end
